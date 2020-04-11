@@ -6,6 +6,8 @@ import Test1 from '../Test1/Test1';
 import Test2 from '../Test2/Test2';
 import Test3 from '../Test3/Test3';
 import Test4 from '../Test4/Test4';
+import Test5 from '../Test5/Test5';
+
 
 
 
@@ -20,8 +22,8 @@ function App() {
             <li><Link className="link" to="/test2">Update with Arbitrary Decrements</Link></li>
             <li><Link className="link" to="/test3">Show Change to Data with Two Datasets</Link></li>
             <li><Link className="link" to="/test4">Decrement Based on Varying Fractions</Link></li>
+            <li><Link className="link" to="/test5">Define Own Parameters + Metrics</Link></li>
 
-            <li>Define Own Parameters + Metrics</li>
             <li>Try Bubble Chart</li>
             <li>Style It Up</li>
           </ol>
@@ -31,6 +33,8 @@ function App() {
         <Route path="/test2" component={Test2}/>
         <Route path="/test3" component={Test3}/>
         <Route path="/test4" component={Test4} />
+        <Route path="/test5" component={Test5} />
+
               
       </section>
       </Router>
