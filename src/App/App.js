@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import {HashRouter as Router, Route, Link} from 'react-router-dom';
+
 import Test1 from '../Test1/Test1';
 import Test2 from '../Test2/Test2';
 import Test3 from '../Test3/Test3';
@@ -8,12 +10,14 @@ import Test3 from '../Test3/Test3';
 function App() {
   return (
     <div className="App">
+      <Router>
       <header className="App-header">
         <h1>radar chart spike</h1>
           <ol>
-            <li>Show Basic Chart With Sample Data</li>
-            <li>Update with Arbitrary Decrements</li>
-            <li>Show Change to Data with Two Datasets</li>
+            <li><Link className="link" to="/test1">Show Basic Chart With Sample Data</Link></li>
+            <li><Link className="link" to="/test2">Update with Arbitrary Decrements</Link></li>
+            <li><Link className="link" to="/test3">Show Change to Data with Two Datasets</Link></li>
+
             <li>Decrement Based on Varying Fractions</li>
             <li>Define Own Parameters + Metrics</li>
             <li>Try Bubble Chart</li>
@@ -21,10 +25,11 @@ function App() {
           </ol>
       </header>
       <section className="main-content">
-        <Test1/>
-        <Test2/>
-        <Test3/>
+        <Route path="/test1" component={Test1}/>
+        <Route path="/test2" component={Test2}/>
+        <Route path="/test3" component={Test3}/>      
       </section>
+      </Router>
     </div>
   );
 }
