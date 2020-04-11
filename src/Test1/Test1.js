@@ -10,7 +10,7 @@ class Chart1 extends React.Component {
         //this makes the chart go in the canvas with id myChart below
         //idk why but this feels awkward, look into later
         //I think because usually i only see getElementById for root
-        let elementThatHoldsChart = document.getElementById('myChart');
+        let elementThatHoldsChart = document.getElementById('myChart1');
         //make a new chart.js instance? and set parameters:
         //type and data are top level, data contains labels and datasets
         //idk why we're doing it like this, as of now myChart doesn't get called
@@ -31,8 +31,8 @@ class Chart1 extends React.Component {
     render() {
         return (
             <article className="chart-article">
-                <h1>1. Show Chart on Page</h1>
-                <canvas id="myChart">
+                <h1>1. Show Basic Chart With Sample Data</h1>
+                <canvas id="myChart1">
                     
                     {/* chart goes in here */}
                     {/* idk why or if canvas is needed, just followed documentation */}

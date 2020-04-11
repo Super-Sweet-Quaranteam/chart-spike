@@ -19,10 +19,18 @@ body{
   text-align: center;
 }
 
-#myChart{
+canvas{
   border: 2px solid black;
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
   width: 500px;
   height: 500px;
 }
+
+article{
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 10px solid darkslategray;
+}
+
+
