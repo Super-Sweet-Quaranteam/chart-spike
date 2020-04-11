@@ -33,11 +33,13 @@ class Chart2 extends React.Component {
                 datasets: [{
                     label: 'current risk',
                     data: data,
+                    borderColor: 'green'
                 },
                 //this doesn't change after component mounts
                 {
                     label: 'starting risk',
-                    data: this.state.startingData
+                    data: this.state.startingData,
+                    borderColor: 'red'
                 }]
             },
         })
