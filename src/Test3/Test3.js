@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart3 from '../Chart3/Chart3';
+import Chart3 from './Chart3';
 
 class Test2 extends React.Component {
         state = {
