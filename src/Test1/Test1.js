@@ -24,6 +24,8 @@ class Chart1 extends React.Component {
                 }]
             },
         });
+        //just to use myChart variable and avoid warning:
+        if(!myChart){console.log('no myChart variable')};
     }
 
     render() {
