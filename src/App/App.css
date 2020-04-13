@@ -9,6 +9,13 @@
   padding: 10px;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 h1, ul, ol {
   margin: 0;
   padding: 0;
@@ -20,11 +27,10 @@ body{
 }
 
 canvas{
-  border: 2px solid black;
   display: block;
-  margin: 1em auto;
-  width: 500px;
-  height: 500px;
+  margin: 1em 2em;
+  border: 2px solid black;
+  border-radius: 1em;
 }
 
 article{
@@ -42,3 +48,63 @@ article{
   color: lightseagreen;
 }
 
+.chart-div-6{
+  border: 2px solid black;
+  position: relative;
+  width: 90vw;
+  margin-left: 5vw;
+  height: 55vw;
+  border-radius: 20px;
+}
+
+.canvas-holder {
+  position: absolute;
+  width: 100%;
+  min-width: 400px;
+  padding-top: 2em;
+}
+
+#myChart6{
+  border: none;
+  margin: 0;
+} 
+
+#chart-label{
+  z-index: 3;
+  font-size: 2.5vw;
+  color: rgb(122, 122, 122);
+  font-weight: normal;
+  text-transform: uppercase;
+  border-radius: 7vw;
+  width: 15vw;
+  padding: 1em 0;
+  /* background-image: radial-gradient(red, red, red, rgba(255, 0, 0, .5), rgba(255, 0, 0, .1), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)); */
+  background-image: radial-gradient(white, white, white, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  height: 15vw;
+  padding: 6vw 0;
+  position: absolute;
+  left: 37.5vw;
+  top: 20vw;
+}
+
+.buttonDiv6{
+  background-color: rgb(233, 233, 233);
+  border: 2px solid black;
+  width: 90vw;
+  padding: 5px;
+  margin: 1em 5vw;
+  border-radius: 20px;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: .6em;
+}
+
+.buttonDiv6 button{
+  display: inline-block;
+  font-size: .5em;
+  margin: 0 auto;
+  padding: 0;
+}

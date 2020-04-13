@@ -22,7 +22,7 @@ function App() {
             <li><Link className="link" to="/test3">Show Change to Data with Two Datasets</Link></li>
             <li><Link className="link" to="/test4">Decrement Based on Varying Fractions</Link></li>
             <li><Link className="link" to="/test5">Define Own Parameters + Metrics</Link></li>
-            <li><Link className="link" to="/test6">Style It Up</Link></li>
+            <li><Link className="link" to="/test6">Style</Link></li>
           </ol>
       </header>
       <section className="main-content">
